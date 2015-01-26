@@ -86,6 +86,18 @@ class AcceptanceTests extends FunSuite with Matchers with AcceptanceTester {
                ....""")
   }
 
+  test("A cell is born outside") {
+    assertGoL(
+      in = """ ...
+               OOO
+               ...""",
+      exp = """.O.
+               .O.
+               .O."""
+    )
+  }
+
+
 }
 
 /**
