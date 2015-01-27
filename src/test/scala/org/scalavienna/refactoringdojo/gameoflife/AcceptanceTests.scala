@@ -126,9 +126,9 @@ trait TestGameCalculator {
    * Ideally, it should consist of just one or two lines.
    */
   def calculate(in: String): String = {
-    val world = new GoL()
+    val world = GoL
     world.from_string(in)
-    world.calcNxtIter
+    world.calcNextIteration()
     world.to_str
   }
 
